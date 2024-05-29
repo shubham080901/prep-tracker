@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anvesha's Prep Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Anvesha's Prep Tracker</h1>
+        <form id="chapterForm">
+            <select id="subjectSelect" required>
+                <option value="" disabled selected>Select subject</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Maths">Maths</option>
+            </select>
+            <input type="text" id="chapterInput" placeholder="Enter chapter name" required>
+            <button type="submit">Add Chapter</button>
+        </form>
+        <div class="subjects">
+            <div class="subject" id="Physics">
+                <h2>Physics</h2>
+                <ul class="chapterList"></ul>
+            </div>
+            <div class="subject" id="Chemistry">
+                <h2>Chemistry</h2>
+                <ul class="chapterList"></ul>
+            </div>
+            <div class="subject" id="Maths">
+                <h2>Maths</h2>
+                <ul class="chapterList"></ul>
+            </div>
+        </div>
+        <div class="progress-container">
+            <h3>Overall Progress</h3>
+            <div class="progress-bar" id="overallProgressBar"></div>
+            <p id="overallProgressText"></p>
+        </div>
+        <footer>Made by Shubham as a gift</footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
